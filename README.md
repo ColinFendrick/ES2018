@@ -210,4 +210,15 @@ const collection = { a: 10, b: 20, c: 30,
 This is implicitely calling the asyncIterator on the collection.
 ## Promise.prototype.finally
 
-## Template Literal Revision
+Example:
+```
+fetch('http://www.google.com').then(res => {
+  console.log(res)
+}).catch(err => {
+  console.log(err)
+}).finally(() => {
+  document.querySelector('#spinner').style.display = 'none'
+})
+```
+This allows us to prevent duplicate code, like here where the spinner should hide regardless
+of the result of the promise.
