@@ -2,8 +2,8 @@ const collection = {
   a: 10, b: 20, c: 30,
   [Symbol.asyncIterator]: async function * () {
     for (let key in this) {
-  yield this[key]
-}
+      yield this[key]
+    }
   }
 }
 

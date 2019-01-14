@@ -11,6 +11,7 @@ const collection = {
     }
   }
 }
+
 const iterator = collection[Symbol.iterator]()
 
 console.log(iterator.next()) // → { value: 10, done: false }
