@@ -8,7 +8,6 @@ const collection = {
 }
 
 const iterator = collection[Symbol.iterator]()
-
 console.log(iterator.next()) // → { value: 10, done: false }
 console.log(iterator.next()) // → { value: 20, done: false }
 console.log(iterator.next()) // → { value: 30, done: false }
